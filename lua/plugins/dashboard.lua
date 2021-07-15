@@ -35,12 +35,6 @@ M.config = function()
         e = {description = {"  Bookmarks                 SPC b m"}, command = "Telescope marks"},
         f = {description = {"  Load Last Session         SPC s l"}, command = "SessionLoad"}
     }
-
-    g.dashboard_custom_footer = {
-        "   ",
-        -- "NvChad Loaded " .. plugins_count .. " plugins",
-        "NvChad v0.5"
-    }
 end
 
 return M
