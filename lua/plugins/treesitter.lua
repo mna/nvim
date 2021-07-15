@@ -5,19 +5,18 @@ M.config = function()
 
     ts_config.setup {
         ensure_installed = {
-            "javascript",
-            "html",
-            "css",
             "bash",
-            "lua",
+            "css",
+            "go",
+            "html",
+            "javascript",
             "json",
-            "python"
-            -- "rust",
-            -- "go"
+            "lua",
+            "python",
         },
         highlight = {
             enable = true,
-            use_languagetree = true
+            use_languagetree = true,
         }
     }
 end
