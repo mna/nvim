@@ -29,10 +29,10 @@ map("n", "<C-a>", [[ <Cmd> %y+<CR>]], opt)
 -- toggle numbers
 map("n", "<leader>n", [[ <Cmd> set nu!<CR>]], opt)
 
--- Truezen.nvim
-map("n", "<leader>zz", ":TZAtaraxis<CR>", opt)
-map("n", "<leader>zm", ":TZMinimalist<CR>", opt)
-map("n", "<leader>zf", ":TZFocus<CR>", opt)
+---- Truezen.nvim
+--map("n", "<leader>zz", ":TZAtaraxis<CR>", opt)
+--map("n", "<leader>zm", ":TZMinimalist<CR>", opt)
+--map("n", "<leader>zf", ":TZFocus<CR>", opt)
 
 map("n", "<C-s>", ":w <CR>", opt)
 -- vim.cmd("inoremap jh <Esc>")

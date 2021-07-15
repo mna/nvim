@@ -176,36 +176,6 @@ return packer.startup(
             end
         }
 
-        use {"tweekmonster/startuptime.vim", cmd = "StartupTime"}
-
-        -- load autosave only if its globally enabled
-        use {
-            "Pocco81/AutoSave.nvim",
-            config = function()
-                require("plugins.zenmode").autoSave()
-            end,
-            cond = function()
-                return vim.g.auto_save == true
-            end
-        }
-
-        -- smooth scroll
-        --use {
-        --    "karb94/neoscroll.nvim",
-        --    event = "WinScrolled",
-        --    config = function()
-        --        require("neoscroll").setup()
-        --    end
-        --}
-
-        use {
-            "Pocco81/TrueZen.nvim",
-            cmd = {"TZAtaraxis", "TZMinimalist", "TZFocus"},
-            config = function()
-                require("plugins.zenmode").config()
-            end
-        }
-
         --   use "alvan/vim-closetag" -- for html autoclosing tag
 
         use {
@@ -215,5 +185,11 @@ return packer.startup(
                 require("utils").blankline()
             end
         }
+
+        -- which-key
+        use {
+          "folke/which-key.nvim",
+        }
+
     end
 )
