@@ -1,5 +1,5 @@
 -- load all plugins
-require "pluginList"
+require "pluginlist"
 require "options"
 require "plugins.bufferline"
 
